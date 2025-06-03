@@ -1,0 +1,133 @@
+
+export const fontConfig = {
+    headlineXSmall: {
+        fontFamily: 'Font',
+        fontSize: 20,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 28,
+    },
+    headlineSmall: {
+        fontFamily: 'Font',
+        fontSize: 24,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 32,
+    },
+    headlineMedium: {
+        fontFamily: 'Font',
+        fontSize: 28,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 36,
+    },
+    headlineLarge: {
+        fontFamily: 'Font',
+        fontSize: 32,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 40,
+    },
+    headlineXLarge: {
+        fontFamily: 'Font',
+        fontSize: 36,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 44,
+    },
+    headlineXXLarge: {
+        fontFamily: 'Font',
+        fontSize: 40,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 52,
+    },
+
+
+    displayXSmall: {
+        fontFamily: 'Font',
+        fontSize: 36,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 44,
+    },
+    displaySmall: {
+        fontFamily: 'Font',
+        fontSize: 44,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 52,
+    },
+    displayMedium: {
+        fontFamily: 'Font',
+        fontSize: 52,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 64,
+    },
+    displayLarge: {
+        fontFamily: 'Font',
+        fontSize: 96,
+        fontWeight: "700",
+        letterSpacing: 0,
+        lineHeight: 112,
+    },
+
+    labelXSmall: {
+        fontFamily: 'Font',
+        fontSize: 12,
+        fontWeight: "500",
+        letterSpacing: 0,
+        lineHeight: 16,
+    },
+    labelSmall: {
+        fontFamily: 'Font',
+        fontSize: 14,
+        fontWeight: "500",
+        letterSpacing: 0,
+        lineHeight: 16,
+    },
+    labelMedium: {
+        fontFamily: 'Font',
+        fontSize: 16,
+        fontWeight: "500",
+        letterSpacing: 0,
+        lineHeight: 20,
+    },
+    labelLarge: {
+        fontFamily: 'Font',
+        fontSize: 18,
+        fontWeight: "500",
+        letterSpacing: 0,
+        lineHeight: 24,
+    },
+
+    bodyXSmall: {
+        fontFamily: 'Font',
+        fontSize: 12,
+        fontWeight: "400",
+        letterSpacing: 0,
+        lineHeight: 20,
+    },
+    bodySmall: {
+        fontFamily: 'Font',
+        fontSize: 14,
+        fontWeight: "400",
+        letterSpacing: 0,
+        lineHeight: 20,
+    },
+    bodyMedium: {
+        fontFamily: 'Font',
+        fontSize: 16,
+        fontWeight: "400",
+        letterSpacing: 0,
+        lineHeight: 24,
+    },
+    bodyLarge: {
+        fontFamily: 'Font',
+        fontSize: 18,
+        fontWeight: "400",
+        letterSpacing: 0,
+        lineHeight: 28,
+    },
+};
