@@ -1,37 +1,24 @@
 import React from 'react';
+import { View } from 'react-native';
 import {
-  View,
-} from 'react-native';
-import { useAppTheme } from './src/hooks/useAppTheme';
-import TextInput from './src/components/UI/textInput/textInput';
+  NavigationContainer, DarkTheme as NavigationDarkTheme,
+  DefaultTheme as NavigationDefaultTheme,
+} from '@react-navigation/native';
+import SplashScreen from './src/screen/splashScreen';
+import LoginScreen from './src/screen/loginScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
-  const { colors } = useAppTheme()
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: colors.background,
-        padding: 20,
-      }}>
-      <TextInput
-        mode='outlined'
-        label='Email'
-        clearIcon='always'
-        placeholder='Enter your email'
-        style={{ width: '100%' }}
-        error={false}
-      />
-      <TextInput
-        mode='outlined'
-        label='Email'
-        clearIcon='always'
-        placeholder='Enter your email'
-        style={{ width: '100%' }}
-        error={false}
-      />
+    <View style={{ flex: 1, }}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="splashScreen" screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="splashScreen" component={SplashScreen} />
+          <Stack.Screen name="loginScreen" component={LoginScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </View>
   );
 }
