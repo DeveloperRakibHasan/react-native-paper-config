@@ -39,7 +39,7 @@ const Button = ({
     const handlePressOut = () => setIsPressed(false);
 
     const backgroundColor = isPressed
-        ? '#333333'
+        ? type === 'primary' ? '#333333' : '#D5D5D5'
         : type === "secondary"
             ? colors.backgroundTertiary
             : (colors[type as keyof typeof colors] as string);

@@ -9,14 +9,7 @@ function App(): React.JSX.Element {
   const { colors } = useAppTheme()
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background, padding: 20 }}>
-      <Button
-        mode="contained"
-        type='primary'
-        size='small'
-        block
-      >
-        Label
-      </Button>
+      
     </View>
   );
 }
