@@ -9,6 +9,7 @@ interface InputProps extends TextInputProps {
     clearIcon?: 'always' | 'while-editing' | 'unless-editing' | 'never';
     size?: 'small' | 'medium' | 'large';
     error?: boolean;
+    type?: 'text' | 'password' | 'number';
 }
 
 const TextInput = ({
@@ -18,11 +19,13 @@ const TextInput = ({
     clearIcon = 'never',
     size = 'medium',
     error = false,
+    type = 'text',
     ...props
 }: InputProps) => {
     const { colors } = useAppTheme()
     const [isFocused, setIsFocused] = useState(false);
     const [inputValue, setInputValue] = useState("");
+    const [showPassword, setShowPassword] = useState(false)
 
     const height = size === 'small' ? 36 : size === 'medium' ? 48 : 56;
     const fontSize = size === 'small' ? 12 : size === 'medium' ? 16 : 20;
@@ -41,7 +44,11 @@ const TextInput = ({
     };
 
     const mergedOnChangeText = (text: string) => {
-        handleTextChange(text);
+        if (type === 'number') {
+            handleTextChange(text.replace(/[^0-9]/g, ''));
+        } else {
+            handleTextChange(text);
+        }
     };
 
     return (
@@ -52,15 +59,24 @@ const TextInput = ({
                 value={inputValue}
                 onChangeText={mergedOnChangeText}
                 clearButtonMode={clearIcon}
+                secureTextEntry={type === 'password' ? !showPassword : false}
+                keyboardType={type === 'number' ? 'numeric' : 'default'}
                 style={[style, { height, fontSize }]}
                 underlineColor={colors.white}
                 underlineStyle={{ backgroundColor: colors.white }}
                 outlineStyle={{
                     borderWidth: 2,
-                    borderColor: error ? colors.error : isFocused ? colors.black : colors.white,
+                    borderColor: error ? colors.error : isFocused ? colors.black : 'transparent',
                     borderRadius: 8,
                     backgroundColor: isFocused ? colors.white : colors.backgroundTertiary,
                 }}
+                right={
+                    type === 'password' &&
+                    <RNTextInput.Icon
+                        icon={showPassword ? 'eye-off' : 'eye'}
+                        onPress={() => setShowPassword(!showPassword)}
+                    />
+                }
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(inputValue.length > 0)}
                 {...props}

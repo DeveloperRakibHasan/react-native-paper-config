@@ -14,8 +14,8 @@ function App(): React.JSX.Element {
   return (
     <View style={{ flex: 1, }}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="splashScreen" screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="splashScreen" component={SplashScreen} />
+        <Stack.Navigator initialRouteName="loginScreen" screenOptions={{ headerShown: false }}>
+          {/* <Stack.Screen name="splashScreen" component={SplashScreen} /> */}
           <Stack.Screen name="loginScreen" component={LoginScreen} />
         </Stack.Navigator>
       </NavigationContainer>

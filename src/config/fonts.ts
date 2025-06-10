@@ -1,42 +1,43 @@
+import { fontsFamily } from "../utils/fonts";
 
 export const fontConfig = {
     headlineXSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 20,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 28,
     },
     headlineSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 24,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 32,
     },
     headlineMedium: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 28,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 36,
     },
     headlineLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 32,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 40,
     },
     headlineXLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 36,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 44,
     },
     headlineXXLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 40,
         fontWeight: "700",
         letterSpacing: 0,
@@ -45,28 +46,28 @@ export const fontConfig = {
 
 
     displayXSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 36,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 44,
     },
     displaySmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 44,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 52,
     },
     displayMedium: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 52,
         fontWeight: "700",
         letterSpacing: 0,
         lineHeight: 64,
     },
     displayLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.bold,
         fontSize: 96,
         fontWeight: "700",
         letterSpacing: 0,
@@ -74,28 +75,28 @@ export const fontConfig = {
     },
 
     labelXSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.medium,
         fontSize: 12,
         fontWeight: "500",
         letterSpacing: 0,
         lineHeight: 16,
     },
     labelSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.medium,
         fontSize: 14,
         fontWeight: "500",
         letterSpacing: 0,
         lineHeight: 16,
     },
     labelMedium: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.medium,
         fontSize: 16,
         fontWeight: "500",
         letterSpacing: 0,
         lineHeight: 20,
     },
     labelLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.medium,
         fontSize: 18,
         fontWeight: "500",
         letterSpacing: 0,
@@ -103,28 +104,28 @@ export const fontConfig = {
     },
 
     bodyXSmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.regular,
         fontSize: 12,
         fontWeight: "400",
         letterSpacing: 0,
         lineHeight: 20,
     },
     bodySmall: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.regular,
         fontSize: 14,
         fontWeight: "400",
         letterSpacing: 0,
         lineHeight: 20,
     },
     bodyMedium: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.regular,
         fontSize: 16,
         fontWeight: "400",
         letterSpacing: 0,
         lineHeight: 24,
     },
     bodyLarge: {
-        fontFamily: 'Font',
+        fontFamily: fontsFamily.regular,
         fontSize: 18,
         fontWeight: "400",
         letterSpacing: 0,
